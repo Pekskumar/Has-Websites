@@ -415,7 +415,35 @@ td{text-align: left; font-weight: normal;}
     width: auto;
     height: 100px;
 }
+
+
 /*---------------------------------- our technology end -----------------------------------*/
+/*---------------------------------- experience start -----------------------------------*/
+.pricing .slick-prev:before,.pricing .slick-next:before{font-size: 22px;
+    line-height: 1;
+    opacity: 1;}
+.pricing .slick-dots li.slick-active button:before{
+    font-size: 19px !important;}
+#sakura {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.include-section:before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.include-section .container{position: relative;}
+/*---------------------------------- experience end -----------------------------------*/
 /*---------------------------------- Sitemap -----------------------------------*/
 .home-btn{
     text-align: center;
@@ -847,13 +875,17 @@ td{text-align: left; font-weight: normal;}
 .pricing .box {
     padding: 60px 40px;
     box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
-    background: #fff;
-    height: 100%;
+    background: #fff;min-height: 680px;
     border-top: 4px solid #fff;
     border-radius: 20px;
-    margin-right: 3%;
+    margin: 0 10px;
     width: 31.33%;
+       cursor: pointer;
 }
+
+}
+
+
 .pricing .box:last-child{margin-right: 0;}
 .pricing h3 {
     font-weight: 500;
@@ -863,8 +895,8 @@ td{text-align: left; font-weight: normal;}
 }
 .pricing h4 {
     font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 22px;
+    font-weight: 500;    margin: 0;
+    /*margin-bottom: 22px;*/
     background: linear-gradient(to right top, #61dafb, #4bc3ec, #38addc, #2697cb, #1781b9, #2d78ba, #446eb8, #5a62b2, #8b59b2, #b74aa6, #da388d, #f22e6a);
     -webkit-background-clip: text;
     background-clip: text;
@@ -891,21 +923,23 @@ sub, sup {
     color: #47b2e4;
     font-size: 18px;
     display: block;
+    padding: 15px 0 10px;
 }
 .pricing .box ul {margin: 0;
-    padding: 20px 0;
+    padding: 20px 0 0;
     list-style: none;
     color: #999;
     text-align: left;
     line-height: 20px;
 }
 .pricing ul li {
-    padding: 10px 0 10px 30px;
+    padding: 4px 0 0px 34px;
     position: relative;
+    font-size: 16px;
 }
 .pricing ul i {
     
-    font-size: 24px;
+    font-size: 18px;
     position: absolute;
     left: 0;
     top: 6px;
@@ -2448,7 +2482,7 @@ video{
     footer .logo img {    max-width: 238px;}
     footer .logo {    margin-bottom: 15px;}
     .center-menu .acc {    width: 45%;margin-bottom: 35px;}
-    .pricing .box {    padding: 40px 30px;}
+    .pricing .box {    padding: 40px 30px;    min-height: 700px;}
     
     
     /*.main-header {        padding: 40px 30px;}*/
@@ -2501,6 +2535,7 @@ video{
     .overlay:nth-child(3n),.overlay{width: 48%;margin-bottom: 4%;    margin-right: 4%;}
     .overlay:nth-child(even){margin-right: 0;}
     .card__content {    min-height: auto;}
+    .pricing .box {   min-height: 800px;}
     .term_condition h2 {    margin-bottom: 16px;}
     .contact-info{    width: 48%;
     margin-bottom: 4%;}
@@ -2522,12 +2557,12 @@ video{
     .tablinks p{display: none;}
     body .slick-dots {    bottom: -50px;}
     .pricing .slick-dots {    bottom: -57px;}
-    .pricing .box {
-    /* padding: 34px 30px; */
+/*    .pricing .box {
+     padding: 34px 30px; 
     width: 48%;
     margin-right: 4%;
-    margin-bottom: 4%;}
-    .pricing .box:nth-child(even){margin-right: 0;}
+    margin-bottom: 4%;}*/
+    /*.pricing .box:nth-child(even){margin-right: 0;}*/
     .pricing h4{margin-bottom: 0;}
     .newsletter-one .newsletter-img img {
     min-height: 300px;
@@ -2561,6 +2596,7 @@ video{
     min-height: auto;}
     /*.logo img {    max-width: 258px;}*/
     .nav-up {    top: -159px;}
+    .pricing .box {    min-height: 900px;}
     .main-header {    height: 159px;    padding: 20px 30px;    padding-right: 45px;}
     .fro-img {    max-width: 53%;}
     .center-menu .fro{width: 100%;}
@@ -2587,7 +2623,8 @@ video{
     word-break: unset;
     margin-bottom: 0;
     letter-spacing: unset;}
-
+    .pricing .box {
+    min-height: 1066px;}
     .banner-contant h1 {margin-bottom: 12px;
     font-size: 35px;}
     .count-happy {    width: 100%;}
@@ -2680,6 +2717,13 @@ video{
     background-position: center;
 }
 
+
+    .pricing h4 {    font-size: 28px;}
+    .pricing h4 span{    padding: 9px 0 10px;}
+    .pricing .box ul{    padding: 8px 0 0;}
+
+
+
 }
 @media only screen and (max-width: 414px){
   .creative-image img {    min-height: 300px;    max-height: 300px;}
@@ -2728,6 +2772,19 @@ video{
     .other {
     height: 600px;}
     .main-header{    padding-right: 37px;   }
+    .pricing .box{    padding: 20px 18px;}
+    .pricing h4 {    font-size: 24px;}
+    .pricing h4 span {    padding: 6px 0 5px;    font-size: 15px;}
+    .pricing h3 {
+    font-weight: 500;
+    margin-bottom: 14px;
+    font-size: 16px;}
+    .pricing ul li{    padding: 4px 0 0px 26px;
+    position: relative;
+    font-size: 15px;}
+    .pricing ul i {
+    font-size: 13px;}
+    .pricing .box {    min-height: 1446px;}
     .primary-btn {
     padding: 8px 35px;}
     /*.logo img {    max-width: 96%;}*/
