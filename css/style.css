@@ -790,7 +790,7 @@ td{text-align: left; font-weight: normal;}
     -webkit-text-fill-color: transparent;
     color: transparent;}
 .count-happy{width: 25%;}
-.count-happy h2{position: relative;padding-top: 28px;margin-bottom: 32px;font-weight: 400;}
+.count-happy h2{position: relative;padding-top: 28px;margin-bottom: 32px;font-weight: 400;    font-size: 36px;}
 .count-happy h2:after {
     position: absolute;
     content: " ";
