@@ -142,6 +142,7 @@ td{text-align: left; font-weight: normal;}
 .flex-direction-raw-reverse{flex-direction: row-reverse;}
 .responsive-padding{ padding: 70px 0;}
 .p-30{padding: 0 30px;}
+.bg-white{background-color: #fff;}
 
 
 .primary-btn {
@@ -396,6 +397,11 @@ td{text-align: left; font-weight: normal;}
 
 
 /*---------------------------------- Standard Clasess End -----------------------------------*/
+@keyframes s {from {transform: scale(1);}to {transform: scale(1.2);}}
+.preloader {width:100vw;height:100vh;position:fixed;background:#FFFFFF;display:flex;align-items:center;justify-content:center;z-index:99999999;pointer-events:none;opacity:0;left:0;right:0;top:0;transition:all 0.3s cubic-bezier(0.950, 0.050, 0.795, 0.035);}
+.preloader img {position:relative;z-index:9999999999;animation: s 0.5s cubic-bezier(0.600, 0, 0.735, 0.045) infinite alternate;}
+.preloader.open {opacity:1;pointer-events:none;}
+
 /*---------------------------------- our technology start -----------------------------------*/
 #wrap {
   /*background-color: #ddd;*/
@@ -437,13 +443,36 @@ td{text-align: left; font-weight: normal;}
     content: " ";
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 0;
     top: 0;
     left: 0;
 }
 .include-section .container{position: relative;}
 /*---------------------------------- experience end -----------------------------------*/
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.cursor--small {
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 50%;
+  z-index: 11000;
+
+  background: #f22e6a;
+}
+.cursor--canvas {
+  width: 100vw;
+  height: 100vh;
+  z-index: 12000;
+}
+
+
 /*---------------------------------- Sitemap -----------------------------------*/
 .home-btn{
     text-align: center;
