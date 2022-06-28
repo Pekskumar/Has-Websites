@@ -2511,7 +2511,7 @@ video{
     footer .logo img {    max-width: 238px;}
     footer .logo {    margin-bottom: 15px;}
     .center-menu .acc {    width: 45%;margin-bottom: 35px;}
-    .pricing .box {    padding: 40px 30px;    min-height: 700px;}
+    .pricing .box {    padding: 40px 30px;    min-height: 730px;}
     
     
     /*.main-header {        padding: 40px 30px;}*/
@@ -2612,7 +2612,7 @@ video{
 
 
 }
-@media only screen and (max-width: 639px){
+@media only screen and (max-width: 640px){
     .count-happy h2:after {    left: 30%;}
     .single-person .person-image img {    min-height: 150px;    max-height: 150px;}
     .overlay:nth-child(even),.overlay:nth-child(3n), .overlay{width: 100%;    margin-bottom: 30px;    margin-right: 0;}    
@@ -2625,7 +2625,7 @@ video{
     min-height: auto;}
     /*.logo img {    max-width: 258px;}*/
     .nav-up {    top: -159px;}
-    .pricing .box {    min-height: 900px;}
+    .pricing .box {    min-height: 950px;}
     .main-header {    height: 159px;    padding: 20px 30px;    padding-right: 45px;}
     .fro-img {    max-width: 53%;}
     .center-menu .fro{width: 100%;}
@@ -2757,10 +2757,8 @@ video{
 @media only screen and (max-width: 414px){
   .creative-image img {    min-height: 300px;    max-height: 300px;}
   .count-happy h2:after {    left: 33%;}
-  .single-person .person-image img {
-    min-height: 230px;
-    max-height: 230px;
-}
+  .single-person .person-image img {    min-height: 230px;    max-height: 230px;}
+  .pricing .box {    min-height: 1250px;}
   .main-header {    height: 156px;    padding: 18px 30px;    padding-right: 40px;}
   .nav-up {    top: -156px;}
   .right-bottom p a{    margin-top: 20px;}
@@ -2773,6 +2771,9 @@ video{
 
 }
 @media only screen and (max-width: 375px){
+  .pricing .box {
+    min-height: 1420px;
+}
     .count-happy h2:after {    left: 31%;}
     .general-heading h2 {
     font-size: 31px;

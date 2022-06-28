@@ -426,19 +426,29 @@ $(function(){
     cssEase: "linear",
     pauseOnHover: true,
    responsive: [{
-          breakpoint: 1024,
+          breakpoint: 1124,
           settings: {
+            speed: 5000,
             slidesToShow: 4,
             slidesToScroll: 1
           }
         },
         {
-           breakpoint: 400,
+           breakpoint: 700,
            settings: {
+            speed: 5000,
               arrows: false,
               slidesToShow: 2,
               slidesToScroll: 1
            }
-        }]
+          },
+           {
+            breakpoint: 480,
+            settings: {
+              speed: 5000,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }]
     });
 });
