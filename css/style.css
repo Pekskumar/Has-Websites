@@ -1520,7 +1520,7 @@ li .sub-menu li:last-child a{border-color: transparent;}
 @media only screen and (max-width:1199px){
     /*Reusable code for header*/
     .hamburger{display: block;}
-    .menu_sub:after {    content: " ";    position: absolute;    width: 58px;    height: 70px;    background-image: url(../images/arrow-right-white.png) ;  background-repeat: no-repeat;    right: 20px;    top: -6px;    background-size: 35px;    background-position: center;    transform: rotate(90deg);}
+    .menu_sub:after {    content: " ";    position: absolute;    width: 58px;    height: 70px;    background-image: url(../images/arrow-right-white.png) ;  background-repeat: no-repeat;    right: 20px;    top: -6px;    background-size: 30px;    background-position: center;    transform: rotate(90deg);}
     #menu-main-menu li .sub-menu li .sub-menu, #menu-main-menu li .sub-menu, #menu-top-menu li .sub-menu,#menu-main-menu li .sub-menu li:hover .sub-menu, #menu-main-menu li:hover .sub-menu, #menu-top-menu li:hover .sub-menu {    background-color: transparent;    width: 100%;position: relative;padding-top: 0; display: none;}
     li .sub-menu a {    border-bottom: 0;        padding: 0;color: #000;}
     li .sub-menu li.menu-item-has-children:after,.top-mnu li a::before{display: none;}
