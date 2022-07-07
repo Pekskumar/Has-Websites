@@ -68,9 +68,9 @@ jQuery(document).ready(function(){
    AOS.init();
    
    // Lazy load
-   $('img.lazy').lazyload({
-       effect: "fadeIn"
-   });
+  //  $('img.lazy').lazyload({
+  //      effect: "fadeIn"
+  //  });
    
    // Counter
    function inVisible(element) {
@@ -130,6 +130,24 @@ $(function() {
    scrollTop: jQuery(".tabbing-slider,.report-block,.left-image-content").offset().top
    }, 2000);
    });
+
+   jQuery(".technology").click(function() {
+    jQuery('html, body').animate({
+    scrollTop: jQuery(".our-technology").offset().top
+    }, 2000);
+    });
+
+    jQuery(".experiences").click(function() {
+      jQuery('html, body').animate({
+      scrollTop: jQuery(".experiences-one").offset().top
+      }, 2000);
+      });
+
+      jQuery(".contact").click(function() {
+        jQuery('html, body').animate({
+        scrollTop: jQuery(".contact-one").offset().top
+        }, 2000);
+        });
    
    // Mouse cursor
   let prim = document.querySelector ('#cursor .primary');
