@@ -64,7 +64,7 @@
          <div class="container">
             <div class="banner-contant">
                <h3 data-aos="fade-right" data-aos-duration="1000">WELCOME TO PEK'S WORLD ...</h3>
-               <h1 data-aos="zoom-in" data-aos-duration="1000">PRAKASH PARMAR</h1>
+               <h1 class="typing" data-aos="zoom-in" data-aos-duration="1000">PRAKASH PARMAR</h1>
                <p data-aos="fade-left" data-aos-duration="1000">This is Home Page</p>
                <div class="banner-btn-box"> <a data-aos="fade-right" data-aos-duration="1000" class="primary-btn" href="#">View Our Portfolio<span></span></a> <a data-aos="fade-left" data-aos-duration="1000" class="primary-btn" href="#">Get Started<span></span></a> </div>
             </div>
@@ -262,6 +262,50 @@ needed.
       </section>
       <!-- Footer -->
       <!-- <section class="hover"></section> -->
+      <div class="footer-animation">
+        <svg viewBox="0 0 120 28">
+            <defs> 
+              <mask id="xxx">
+                <circle cx="7" cy="12" r="40" fill="#fff"></circle>
+              </mask>
+              
+              <filter id="goo">
+                 <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"></feGaussianBlur>
+                 <feColorMatrix in="blur" mode="matrix" values="
+                      1 0 0 0 0  
+                      0 1 0 0 0  
+                      0 0 1 0 0  
+                      0 0 0 13 -9" result="goo"></feColorMatrix>
+                 <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                 </filter>
+                <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"></path>
+             </defs> 
+           
+              <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use> 
+              <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            
+             <g class="topball">
+             <circle class="ball" cx="110" cy="8" r="4" stroke="none" stroke-width="0" fill="red"></circle>
+           
+               <g class="arrow">
+               <polyline class="" points="108,8 110,6 112,8" fill="none"></polyline>
+               <polyline class="" points="110,6 110,10.5" fill="none"></polyline>
+               </g>
+               
+             </g>
+             <g class="gooeff">
+             <circle class="drop drop1" cx="20" cy="2" r="1.8"></circle>
+             <circle class="drop drop2" cx="25" cy="2.5" r="1.5"></circle>
+             <circle class="drop drop3" cx="16" cy="2.8" r="1.2"></circle>
+               <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1"></use>
+             
+               <!-- g mask="url(#xxx)">
+               <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+               </g>
+             </g -->
+           
+           </g></svg>
+      </div>
 
 
       <footer class="hover">

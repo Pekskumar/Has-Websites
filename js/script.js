@@ -14,6 +14,8 @@ jQuery(document).ready(function(){
        $('#menu-main-menu').slideToggle();
    });
 
+  
+
    // Button
  $(function() {  
  $('.primary-btn')
@@ -131,6 +133,12 @@ $(function() {
    }, 2000);
    });
 
+   jQuery(".ball").click(function() {
+    jQuery('html, body').animate({
+    scrollTop: jQuery(".top-nav").offset().top
+    }, 2000);
+    });
+ 
    jQuery(".technology").click(function() {
     jQuery('html, body').animate({
     scrollTop: jQuery(".our-technology").offset().top
