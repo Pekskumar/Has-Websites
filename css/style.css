@@ -355,7 +355,9 @@ td{text-align: left; font-weight: normal;}
 .icon:nth-child(3) img {-webkit-animation-delay: 0.3s;animation-delay: 0.3s}
 .icon:nth-child(4) img {-webkit-animation-delay: 0.4s;animation-delay: 0.4s}
 
+
 /* footer animation */
+
 
 svg {
   width:100%;
@@ -663,7 +665,7 @@ svg {
 
 /*----------------------------------Blog_component -----------------------------------*/
 /* text typing */
-.typing {
+/* .typing {
   overflow: hidden;
   white-space: nowrap;
   font-size: 1.5rem;
@@ -695,6 +697,36 @@ svg {
   100% {
       border-right: 1.6px solid rgba(226, 192, 68,0);
   }
+} */
+.typewriter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.typewriter span {
+    color: #fff;
+    text-transform: uppercase;
+    
+    border-right: solid #f22e6a 4px; 
+    animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+    from { border-color: var(--text-color); }
+    to { border-color: transparent; }
+}
+
+@media (max-width: 576px) {
+    .typewriter { font-size: 24px; }
+}
+@media (max-width: 768px) {
+    .typewriter { font-size: 36px; }
 }
 
 .overlay {
@@ -2102,6 +2134,9 @@ background: linear-gradient(to right top, #61dafb, #4bc3ec, #38addc, #2697cb, #1
     margin-bottom: 20px;
     width: 100%;
 }
+.mobile-view{
+  display: none;
+}
 /*.form form{
     width: 100%;
     display: flex;
@@ -2322,7 +2357,7 @@ video{
 }
 .banner-section .container{    max-width: 740px;position: relative;z-index: 1;margin: 0 auto;padding: 12% 30px;}
 .banner-contant h3{  color: #fff;    font-size: 24px;   line-height: 1.5;    text-transform: uppercase;    letter-spacing: 4px;   font-weight: 300;    margin: 0 0 16px;}
-.banner-contant h1{    font-size: 50px;    line-height: 1.15;    text-transform: uppercase; color: #fff;   letter-spacing: 4px;    font-weight: 600;      text-shadow: 0 0px 9px #fff;}
+.banner-contant h1{    font-size: 50px;    line-height: 1.15;    text-transform: uppercase; color: #fff;   letter-spacing: 4px;    font-weight: 600;      text-shadow: 0 0px 9px #fff;margin-bottom: 15px;}
 .banner-contant p{ color: #fff;    font-size: 24px;   line-height: 1.5;     letter-spacing: 4px;   font-weight: 300;    margin: 0 0 46px;    text-shadow: 0 0px 9px #ffffff;}
 /*.creative-section{    margin: 70px 0;}*/
 .creative-contant{width: 48%;}
@@ -2777,11 +2812,14 @@ video{
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;}
-    .nav-call {  display: none;}
+    /* .nav-call {  display: none;} */
 
   
 }
 @media only screen and (max-width: 480px){
+  .mobile-view{
+    display: block;
+  }
     .general-heading {    margin-bottom: 30px;text-align: center;}
     .comming-soon .general-heading {
     margin-top: 30px;}
@@ -2937,6 +2975,7 @@ video{
   
 }    
 @media only screen and (max-width: 320px){
+  .banner-contant h1{    font-size: 20px;}
     .creative-image img {    min-height: 250px;    max-height: 250px;} 
     .count-happy h2:after {    left: 28%;}
     .single-person .person-image img {    min-height: 130px;    max-height: 130px;}
