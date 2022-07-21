@@ -1865,7 +1865,7 @@ footer .logo {    width: auto;text-align: left;}
 /*----------------Header-End--------------------------------------------------------------*/
 /*----------------Footer-Start--------------------------------------------------------------*/
 /*footer{background-color: #181b29;    background: linear-gradient(to right top, #61dafb, #4bc3ec, #38addc, #2697cb, #1781b9, #2d78ba, #446eb8, #5a62b2, #8b59b2, #b74aa6, #da388d, #f22e6a);animation:gradient 15s ease infinite;}*/
-footer{background:#38addc;margin-top: -8px;
+footer{background:#38addc;margin-top: -35px;
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     }
