@@ -2707,10 +2707,17 @@ video{
     width: 32%;
     margin-bottom: 2%;}
     .single-person:nth-child(3n){margin-right: 0;}
+    .bottom-menu .container{
+      flex-direction: column;
+    }
+    .right-bottom{
+      margin-bottom: 10px;
+    }
 
   
 }
 @media only screen and (max-width: 768px){
+  
     .h2, h2 {    font-size: 33px;}
     .general-heading {    margin-bottom: 40px;}
     .banner-section .container {       padding: 8% 30px;}
@@ -2785,6 +2792,11 @@ video{
     
 
 
+}
+@media only screen and (max-width: 650px){
+
+.legel-menu ul li{    margin-bottom: 12px;    margin-right: 0;    width: 50%;}
+    .legel-menu ul li:after{display: none;}
 }
 @media only screen and (max-width: 640px){
     .count-happy h2:after {    left: 30%;}
@@ -2872,8 +2884,7 @@ video{
     width: 100%;}
     .banner-btn-box .primary-btn:last-child{margin-bottom: 0;}
     .page_404{margin-top: 174px;}
-    .legel-menu ul li{    margin-bottom: 12px;    margin-right: 0;    width: 50%;}
-    .legel-menu ul li:after{display: none;}
+    
     .bottom-menu {    padding: 0 0 28px;}
     .qui ul li{    margin-bottom: 10px;}
     .right-bottom {    margin-bottom: 14px;}
