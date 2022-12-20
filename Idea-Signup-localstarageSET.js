@@ -14,11 +14,17 @@ const Signup = () => {
 
     const formInitialSchema = {
         email: '',
-        password: ''
+        password: '',
+        gender: '',
+        termandcondition : false,
+        transportmode: '',
     }
     const formValidation = yup.object().shape({
         email: yup.string().required('Email is required').email('Please Enter Valid Email Address'),
-        password: yup.string().required('Password is required')
+        password: yup.string().required('Password is required'),
+        gender: yup.string().required('please select your gender'),
+        termandcondition:yup.boolean().oneOf([true],'please accept terms & conditions'),
+        transportmode: yup.string().required('please select your transport mode'),
     });
 
 
@@ -42,6 +48,7 @@ const Signup = () => {
                                 console.log("values", values);
                                 localStorage.setItem("loginId", values.email);
                                 localStorage.setItem("pwd", values.password);
+                                localStorage.setItem("gender", values.gender);
                                 navigate("/signin");
 
                             }
@@ -70,6 +77,51 @@ const Signup = () => {
                                         <ErrorMessage name='password' />
                                     </p>
                                 </div>
+                                <div className='form-group'>
+                                    <label>Select Gender :</label>
+                                    <Field
+                                        component="select"
+                                        name="gender"
+                                        placeholder="Select Gender"
+                                    >
+                                        <option value="" disabled>please select</option>
+                                        <option value="male">male</option>
+                                        <option value="female">female</option>
+                                    </Field>
+                                    <p className='error-msg'>
+                                        <ErrorMessage name='gender' />
+                                    </p>
+                                </div>
+
+                                <div className='form-group'>
+                                    <Field
+                                        type="checkbox"
+                                        name="termandcondition"
+                                    />
+                                    <label>Accept terms and conditions :</label>
+                                    <p className='error-msg'>
+                                        <ErrorMessage name='termandcondition' />
+                                    </p>
+                                </div>
+
+                                <div className='form-group'>
+                                    <Field
+                                        type="radio"
+                                        name="transportmode"
+                                        value="cart"
+                                    />
+                                    <label>bike</label>
+                                    <Field
+                                        type="radio"
+                                        name="transportmode"
+                                        value="bike"
+                                    />
+                                    <label>car</label>
+                                    <p className='error-msg'>
+                                        <ErrorMessage name='transportmode' />
+                                    </p>
+                                </div>
+
                                 <div className='submit-btn form-group'>
                                     <button
                                         className='custom-btn'
